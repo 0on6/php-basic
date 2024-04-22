@@ -11,7 +11,7 @@ with:
 registry: ghcr.io
 username: ${{ github.actor }}
 password: ${{ secrets.GITHUB_TOKEN }}
-- name: Build the PHP image 7.2 image
+- name: Build the PHP image 72 image
 run: |
        docker build . --tag ghcr.io/0on6/php-basic:latest
        docker run ghcr.io/0on6/php-basic:latest
