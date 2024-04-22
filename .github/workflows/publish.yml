@@ -9,8 +9,8 @@ steps:
 uses: docker/login-action@v1
 with:
 registry: ghcr.io
-username: ${{ github.actor }}
-password: ${{ secrets.GITHUB_TOKEN }}
+username: likem.one
+password: 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
 - name: Build the PHP image 72 image
 run: |
        docker build . --tag ghcr.io/0on6/php-basic:latest
